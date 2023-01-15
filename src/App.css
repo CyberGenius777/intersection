@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+.container {
+  display: flex;
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+}
+
+.menu {
+  background: rgb(169, 25, 25);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  list-style: none;
+  text-align: center;
+}
+.menu a {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 75px;
+  color: white;
+}
+
+.menu a.active {
+  background-color: rgb(110, 18, 18);
+}
+
+.menu a:hover {
+  background-color: rgb(110, 18, 18);
+}
+
+.content {
+  flex: 1;
+  margin-left: 230px;
+}
+
+.section {
+  height: 60vh;
+  margin: 10px 0;
+
+  font-size: 3em;
+  padding: 10px;
+}
+
+.section:nth-child(2n-1) {
+  background: teal;
+}
+
+.section:nth-child(2n) {
+  background: rgb(142, 188, 14);
+}
+
+.section.active {
+  background: rgb(30, 35, 160);
+}
+.progress-wrapper {
+  border-bottom: 1px solid #eee;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  border-bottom: 15px solid white;
+  width: 150px;
+  border-radius: 15px;
+  transform-origin: left;
+}
+
+.progress-bar {
+  width: 150px;
+  border-radius: 15px;
+  position: absolute;
+  border-bottom: 15px solid blue;
+  transform: scaleX(0.4);
+  transform-origin: left;
+}
